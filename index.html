@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeHub - Your Code Repositories</title>
+  <link rel="stylesheet" href="letscs.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <h1>CodeHub</h1>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Repositories</a>
+        <a href="#">Upload</a>
+        <a href="#">Profile</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+      <h2>Manage Your Repositories</h2>
+
+      <!-- Repository Upload Form -->
+      <div class="repo-upload">
+        <h3>Upload New Code</h3>
+        <form id="uploadForm">
+          <input type="text" id="repoName" placeholder="Repository Name" required>
+          <input type="file" id="codeFile" accept=".zip,.tar,.rar" required>
+          <button type="submit">Upload Code</button>
+        </form>
+      </div>
+
+      <!-- Repository List -->
+      <div id="repoList" class="repo-list">
+        <h3>Your Repositories</h3>
+        <ul id="repoListContainer"></ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 CodeHub. All rights reserved.</p>
+  </footer>
+
+  <script src="letsjs.js"></script>
+</body>
+
+</html>
